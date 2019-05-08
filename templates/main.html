@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<div class="alert alert-info">
+    Only 4k for the time being
+</div>
+
+<div class="row">
+
+    {% for skin in skinData %}
+    <div class="col-sm-3">
+        <div class="card skin-card">
+            <div class="card-body">
+                <h5 class="card-title">{{ skin[0] }}</h5>
+                <a href="{{ skin[1] }}" class="card-link">Download</a>
+            </div>
+            <img src="{{ skin[2] }}" class="card-img-bottom" alt="Skin Thumbnail" />
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<div id="submitForm">
+    <form action="/submit" method="post">
+        <div class="form-group">
+            <label for="skinName">Skin Name</label>
+            <input type="text" class="form-control" id="skinName" name="skinName" autofocus placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="skinUrl">Download Link</label>
+            <input type="url" class="form-control" id="skinUrl" name="skinUrl" placeholder="Url">
+        </div>
+        <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+    </form>
+</div>
+{% endblock %}

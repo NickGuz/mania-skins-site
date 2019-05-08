@@ -1,0 +1,9 @@
+skins/*
+static/thumbnails/*
+!skins/.gitkeep
+!static/thumbnails/.gitkeep
+
+__pycache__/
+mania.db
+config.cfg
+
