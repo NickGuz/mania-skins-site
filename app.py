@@ -75,3 +75,7 @@ def approve():
 @app.route("/skins/<path:filename>")
 def download_file(filename):
     return send_from_directory(app.config["DOWNLOAD_FOLDER"], filename, as_attachment=True, mimetype="application/octet-stream")
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0")
