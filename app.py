@@ -4,7 +4,8 @@ from helpers import alert_page, download_skin, sql_execute
 import sqlite3
 
 # create flask instance
-app = Flask(__name__)
+application = Flask(__name__)
+app = application
 
 # set up config file
 app.config.from_pyfile("config.cfg")
